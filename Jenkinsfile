@@ -15,7 +15,7 @@ pipeline {
                  }
                  stage('Deploy to Cloudhub') { 
                    environment {
-                                 ANYPOINT_CREDENTIALS = credentials('platform.credentials')
+                                 ANYPOINT_CREDENTIALS = credentials('sirinew1')
                                }
                    steps {
                             bat 'mvn package deploy -DmuleDeploy -DmuleVersion=4.3.0 -Dusername=sirinew1 -Dpassword=Sivagiri@99 -DworkerType=Micro -Dworkers=1 -Dregion=us-west-2'
